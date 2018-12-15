@@ -9,7 +9,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <iframe src={content}
-      frameborder: 0
+      frameborder: "0"
       scrolling: "no"
       seamless: "seamless" />
   )
