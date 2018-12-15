@@ -8,7 +8,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <iframe src={content} />
+    <iframe src={content}></iframe>
   )
 }
 
