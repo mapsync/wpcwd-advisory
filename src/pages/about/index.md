@@ -1,5 +1,5 @@
 ---
 templateKey: map-page
-title: Map1
+title: Map
 ---
 https://geosyncgo.com/public/ccwd-advisory
