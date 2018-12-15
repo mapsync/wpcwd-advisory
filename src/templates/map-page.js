@@ -35,7 +35,7 @@ const MapPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+MapPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
