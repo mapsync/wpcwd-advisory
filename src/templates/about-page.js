@@ -26,7 +26,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
+        content={post.frontmatter.map}
       />
     </Layout>
   )
