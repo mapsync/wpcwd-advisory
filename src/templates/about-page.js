@@ -2,20 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const AboutPageTemplate = ({ title, map }) => {
 
   return (
-    <iframe src={content}></iframe>
+    <iframe src={map}></iframe>
   )
 }
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  map: PropTypes.string.isRequired,
 }
 
 const AboutPage = ({ data }) => {
@@ -26,7 +23,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.frontmatter.map}
+        map={post.frontmatter.map}
       />
     </Layout>
   )
