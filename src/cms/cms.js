@@ -43,7 +43,7 @@ var NotificationControl = class Control extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "notification",
+        "form-name": "contact",
         "title": document.getElementById("title-field-" + (id - 5)).value,
         "priority": document.getElementById("priority-field-" + (id - 4)).value,
         "sound": document.getElementById("sound-field-" + (id - 3)).value,
