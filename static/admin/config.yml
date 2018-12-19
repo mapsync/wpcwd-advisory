@@ -7,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: "blog"
-    label: "Alerts"
+    label: "Alert"
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -18,13 +18,27 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "notification"
+    label: "Notification"
+    folder: "src/pages/notification"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Priority", name: "priority", widget: "select", options: ["normal", "high"]}
+      - {label: "Sound", name: "sound", widget: "boolean", default: false}
+      - {label: "Message", name: "message", widget: "text"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Send", name: "send", widget: "notification"}
   - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/map/index.md"
         label: "Map"
         name: "map"
+        editor:
+          - preview: false
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "map-page"}
           - {label: "Title", name: "title", widget: "string"}
