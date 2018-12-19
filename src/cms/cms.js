@@ -2,9 +2,9 @@ import CMS from 'netlify-cms'
 import MapPagePreview from './preview-templates/MapPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
-import PropTypes from 'prop-types';
 import React from 'react';
 import {Helmet} from "react-helmet";
+import { Route } from 'react-router-dom'
 
 const style = {
   send: {
@@ -15,8 +15,8 @@ const style = {
     height: '36px',
     'line-height': '36px',
     padding: '0 40px 0 20px',
-    float: 'right',
-    width: '200px'
+    width: '200px',
+    cursor: 'pointer'
   }
 }
 
@@ -27,21 +27,51 @@ const encode = function (data) {
 }
 
 var NotificationControl = class Control extends React.Component {
-  handleClick() {
+  state = {
+    message: "Submit",
+    disabled: false
+  }
+
+  handleClick(history, idString) {
+    var id = parseInt(idString.split("-")[2]);
+    var self = this;
+    self.setState({
+      message: "Sending...",
+      disabled: true
+    });
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact",
-        "name": "test",
-        "email": "test@test.com",
-        "message": "testtest"
+        "form-name": "notification",
+        "title": document.getElementById("title-field-" + (id - 5)).value,
+        "priority": document.getElementById("priority-field-" + (id - 4)).value,
+        "sound": document.getElementById("sound-field-" + (id - 3)).value,
+        "message": document.getElementById("message-field-" + (id - 2)).value,
+        "link": document.getElementById("link-field-" + (id - 1)).value
       })
     })
-      .catch(error => alert(error));
+      .then(function () {
+        self.setState({
+          message: "Success!"
+        });
+        setTimeout(function () {
+          history.push('/collections/notification');
+        }, 3000)
+      })
+      .catch(function (error) {
+         alert(error);
+         self.setState({
+          message: "Submit",
+          disabled: false
+        });
+      });
   }
 
   render() {
+    const {
+      forID
+    } = this.props;
     return (
       <div>
         <Helmet>
@@ -52,7 +82,11 @@ var NotificationControl = class Control extends React.Component {
               }
             `}</style>
           </Helmet>
-        <button style={style.send} onClick={this.handleClick} type="button">Submit</button>
+        <Route render={({ history}) => (
+          <button style={style.send} disabled={this.state.disabled} onClick={() => { this.handleClick(history, forID); }} type="button">
+          { this.state.message }
+          </button>
+        )} />
       </div>
     );
   }
