@@ -26,7 +26,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Priority", name: "priority", widget: "select", options: ["normal", "high"]}
+      - {label: "Priority", name: "priority", widget: "select", default: "normal", options: ["normal", "high"]}
       - {label: "Sound", name: "sound", widget: "boolean", default: false}
       - {label: "Message", name: "message", widget: "text"}
       - {label: "Link", name: "link", widget: "string"}

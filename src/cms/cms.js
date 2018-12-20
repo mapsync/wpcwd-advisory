@@ -1,5 +1,4 @@
 import CMS from 'netlify-cms'
-import MapPagePreview from './preview-templates/MapPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
 import React from 'react';
@@ -43,7 +42,7 @@ var NotificationControl = class Control extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact",
+        "form-name": "notification",
         "title": document.getElementById("title-field-" + (id - 5)).value,
         "priority": document.getElementById("priority-field-" + (id - 4)).value,
         "sound": document.getElementById("sound-field-" + (id - 3)).value,
@@ -82,6 +81,17 @@ var NotificationControl = class Control extends React.Component {
               }
             `}</style>
           </Helmet>
+          <form
+              name="test"
+              method="post"
+              action="/notification/success"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+              <input type="hidden" name="form-name" value="test" />
+              <input type="hidden" name="test" id="test" value="test" />
+          </form>
         <Route render={({ history}) => (
           <button style={style.send} disabled={this.state.disabled} onClick={() => { this.handleClick(history, forID); }} type="button">
           { this.state.message }
