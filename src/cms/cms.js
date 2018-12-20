@@ -44,9 +44,9 @@ var NotificationControl = class Control extends React.Component {
       body: encode({
         "form-name": "notification",
         "title": document.getElementById("title-field-" + (id - 5)).value,
-        "priority": document.getElementById("priority-field-" + (id - 4)).value,
+        "priority": document.getElementById("priority-field-" + (id - 4)).getAttribute("aria-checked"),
         "sound": document.getElementById("sound-field-" + (id - 3)).getAttribute("aria-checked"),
-        "message": document.getElementById("message-field-" + (id - 2)).getAttribute("aria-checked"),
+        "message": document.getElementById("message-field-" + (id - 2)).value,
         "link": document.getElementById("link-field-" + (id - 1)).value
       })
     })
@@ -55,6 +55,7 @@ var NotificationControl = class Control extends React.Component {
           message: "Success!"
         });
         setTimeout(function () {
+          document.getElementById("title-field-" + (id - 5)).value = "";
           history.push('/collections/notification');
         }, 3000)
       })
