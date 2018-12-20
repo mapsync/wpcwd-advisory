@@ -45,8 +45,8 @@ var NotificationControl = class Control extends React.Component {
         "form-name": "notification",
         "title": document.getElementById("title-field-" + (id - 5)).value,
         "priority": document.getElementById("priority-field-" + (id - 4)).value,
-        "sound": document.getElementById("sound-field-" + (id - 3)).value,
-        "message": document.getElementById("message-field-" + (id - 2)).value,
+        "sound": document.getElementById("sound-field-" + (id - 3)).getAttribute("aria-checked"),
+        "message": document.getElementById("message-field-" + (id - 2)).getAttribute("aria-checked"),
         "link": document.getElementById("link-field-" + (id - 1)).value
       })
     })
@@ -81,17 +81,6 @@ var NotificationControl = class Control extends React.Component {
               }
             `}</style>
           </Helmet>
-          <form
-              name="test"
-              method="post"
-              action="/notification/success"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type="hidden" name="form-name" value="test" />
-              <input type="hidden" name="test" id="test" value="test" />
-          </form>
         <Route render={({ history}) => (
           <button style={style.send} disabled={this.state.disabled} onClick={() => { this.handleClick(history, forID); }} type="button">
           { this.state.message }
