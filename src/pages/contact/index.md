@@ -7,10 +7,23 @@ description: >-
 tags:
   - contact
 ---
+**Pay Online**
+
+[Wood Creek](https://portal.utilitydistrict.com/5670)  
+[East Laurel](https://portal.utilitydistrict.com/5672)  
+[West Laurel](https://portal.utilitydistrict.com/5671)
+
+**Address**
+
 1670 E Hal Rogers Parkway  
 London, KY 40741  
 
-Tel: (606) 878-9420  
+**Phone**
+
+Tel: (606) 878-9420\
 Fax: (606) 878-9425
 
-Hours: 8:00AM-4:30PM M-F
+**Business Hours**
+
+Monday - Friday  
+8:00AM - 4:30PM
