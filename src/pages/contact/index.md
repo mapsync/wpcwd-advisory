@@ -7,7 +7,6 @@ description: >-
 tags:
   - contact
 ---
-Woodcreek Water District  
 1670 E Hal Rogers Parkway  
 London, KY 40741  
 

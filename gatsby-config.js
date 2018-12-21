@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Woodcreek Advisory',
-    description: 'Advisory site for the Woodcreek Water District',
+    title: 'WCWD Advisory',
+    description: 'Advisory site for the Wood Creek Water District, East Laurel Water District and West Laurel Water Association',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
