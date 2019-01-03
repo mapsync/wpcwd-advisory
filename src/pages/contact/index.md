@@ -13,13 +13,13 @@ tags:
 
 **Address**
 
-Winchester Municipal Utilities
-150 North Main Street 
+Winchester Municipal Utilities  
+150 North Main Street  
 Winchester, KY 40391
 
 **Phone**
 
-Tel: (859) 744-5434\
+(859) 744-5434  
 After Hours: (859) 744-6582
 
 **Business Hours**
