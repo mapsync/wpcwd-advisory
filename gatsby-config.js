@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'WCWD Advisory',
-    description: 'Advisory site for the Wood Creek Water District, East Laurel Water District and West Laurel Water Association',
+    title: 'WMU Advisory',
+    description: 'Advisory site for Winchester Municipal Utilities',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
