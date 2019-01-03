@@ -9,21 +9,20 @@ tags:
 ---
 **Pay Online**
 
-[Wood Creek](https://portal.utilitydistrict.com/5670)  
-[East Laurel](https://portal.utilitydistrict.com/5672)  
-[West Laurel](https://portal.utilitydistrict.com/5671)
+<a href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky"><img src="/img/billpay.png" /></a>
 
 **Address**
 
-1670 E Hal Rogers Parkway  
-London, KY 40741  
+Winchester Municipal Utilities
+150 North Main Street 
+Winchester, KY 40391
 
 **Phone**
 
-Tel: (606) 878-9420\
-Fax: (606) 878-9425
+Tel: (859) 744-5434\
+After Hours: (859) 744-6582
 
 **Business Hours**
 
 Monday - Friday  
-8:00AM - 4:30PM
+7:00AM - 4:30PM
