@@ -57,9 +57,39 @@ export default class Index extends React.Component {
             </label>
           </div>
           <div className="field">
-            <label className="label" htmlFor={"title"}>Title</label>
+            <label className="label" htmlFor={"account"}>account</label>
+            <div className="control">
+              <input className="input" type={"text"} name={"account"} onChange={this.handleChange} id={"account"} required={true} />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor={"title"}>title</label>
             <div className="control">
               <input className="input" type={"text"} name={"title"} onChange={this.handleChange} id={"title"} required={true} />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor={"priority"}>priority</label>
+            <div className="control">
+              <input className="input" type={"text"} name={"priority"} onChange={this.handleChange} id={"priority"} required={true} />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor={"sound"}>sound</label>
+            <div className="control">
+              <input className="input" type={"text"} name={"sound"} onChange={this.handleChange} id={"sound"} required={true} />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor={"message"}>message</label>
+            <div className="control">
+              <input className="input" type={"text"} name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label" htmlFor={"link"}>link</label>
+            <div className="control">
+              <input className="input" type={"text"} name={"link"} onChange={this.handleChange} id={"link"} required={true} />
             </div>
           </div>
           <div className="field">
