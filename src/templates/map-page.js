@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 export const MapPageTemplate = ({ title, map }) => {
 
   return (
-    <iframe title="map" src={map + window.location.search}></iframe>
+    <iframe title="map" src={map + location.search}></iframe>
   )
 }
 
