@@ -7,4 +7,4 @@ description: This is only a test . . . again
 ---
 This is a test of the WMU Advisory App powered by GeoSyncGO . . .
 
-[See Area on Map](https://geosyncgo.com/link/go?/map?project=3ceac71e-c405-48c8-9d15-b9d27ccf9d34&&lat=37.980705529734934&lon=-84.11162853240965&zoom=14)
+[See Area on Map](https://geosyncgo.com/link/public/wmu-advisory-app?lat=37.984826239321926&lon=-84.1120543121688&zoom=15&layer=3e9c8cd0-0f78-11e9-9f51-a900fee08ee2&id=f1752b20-ec06-4e73-83b3-53b1dd049fac)
