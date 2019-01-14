@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 
 export const MapPageTemplate = ({ title, map }) => {
   return (
-    <iframe title="map" src={typeof window !== 'undefined' ? map + window.location.search : map}></iframe>
+    <iframe title="map" src={map}></iframe>
   )
 }
 
@@ -17,12 +17,16 @@ MapPageTemplate.propTypes = {
 
 const MapPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  
+  var map = frontmatter.map
+  if (typeof window !== 'undefined')
+    map = frontmatter.map + window.location.search
+  
   return (
     <Layout>
       <MapPageTemplate
         title={frontmatter.title}
-        map={frontmatter.map}
+        map={map}
       />
     </Layout>
   )
