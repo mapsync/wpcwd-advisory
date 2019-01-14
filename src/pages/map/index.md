@@ -2,6 +2,6 @@
 templateKey: map-page
 title: See Map of Area
 map: >-
-  https://geosyncgo.com/link/go?/map?project=97dc2507-059d-4f00-ac92-63e0a3fd6794&&lat=37.9837329523065&lon=-84.11190748214722&zoom=15
+  https://geosyncgo.com/link/go?/map?project=3ceac71e-c405-48c8-9d15-b9d27ccf9d34&&lat=37.98508594994299&lon=-84.11203622817993&zoom=15
 ---
 
