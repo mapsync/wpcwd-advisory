@@ -4,13 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const MapPageTemplate = ({ title, map }) => {
-  var url = map
-  if (typeof window !== 'undefined') {
-    url = map + window.location.search
-  }
-
   return (
-    <iframe title="map" src={url}></iframe>
+    <iframe title="map" src={typeof window !== 'undefined' ? map + window.location.search : map}></iframe>
   )
 }
 
