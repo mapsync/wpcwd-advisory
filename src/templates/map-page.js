@@ -4,15 +4,16 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const MapPageTemplate = ({ title, map }) => {
-
+  var url = map + window.location.search
   return (
-    <iframe title="map" src={map + location.search}></iframe>
+    <iframe title="map" src={url}></iframe>
   )
 }
 
 MapPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   map: PropTypes.string.isRequired,
+  query: PropTypes.string
 }
 
 const MapPage = ({ data }) => {
