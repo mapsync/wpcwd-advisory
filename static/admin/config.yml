@@ -5,7 +5,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 display_url: https://wmu.geosync.cloud
-logo_url: https://wmu.geosync.cloud/img/icon.png
+logo_url: https://hungry-kare-b0ece7.netlify.com/img/icon.png
 
 collections:
   - name: "blog"
