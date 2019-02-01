@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { ExternalLink } from 'react-feather';
 
 const Navbar = class extends React.Component {
 
@@ -53,6 +54,9 @@ const Navbar = class extends React.Component {
         <Link className="navbar-item" activeClassName="active" to="/contact">
           Contact
         </Link>
+        <a  className="navbar-item" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
+          Bill Pay&nbsp;<ExternalLink size={16}/>
+        </a>
       </div>
       </div>
     </div>

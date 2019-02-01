@@ -43,4 +43,6 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Hours", name: "hours", widget: "string"}

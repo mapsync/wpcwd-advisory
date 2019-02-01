@@ -16,26 +16,24 @@ export default class IndexPage extends React.Component {
           <div className="container">
             {posts
               .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
+                <div className="panel" key={post.id}>
+                  <p className="panel-heading">
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
+                    <span> &nbsp;&bull;&nbsp; </span>
+                    {post.frontmatter.date}
                   </p>
-                  <p>
+                  <div className="panel-block">
+                    <p className="blog-desc">
                     {post.frontmatter.description}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               ))}
           </div>
