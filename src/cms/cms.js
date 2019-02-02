@@ -93,6 +93,5 @@ var NotificationControl = class Control extends React.Component {
   }
 }
 
-CMS.registerPreviewTemplate('contact', ContactPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerWidget('notification', NotificationControl)

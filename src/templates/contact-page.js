@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export const ContactPageTemplate = ({ address }) => {
-
+  console.log(address);
   return (
     <section className="section">
       <div className="container">
@@ -15,7 +15,9 @@ export const ContactPageTemplate = ({ address }) => {
                 Address
               </p>
               <div className="panel-block">
+                {name}
                 {address}
+                {city_state_zip}
               </div>
             </div>
           </div>
@@ -57,7 +59,9 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <ContactPageTemplate
-        address={frontmatter.title}
+        name={frontmatter.name} 
+        address={frontmatter.address}
+        city_state_zip={frontmatter.city_state_zip}
       />
     </Layout>
   )
@@ -74,7 +78,13 @@ export const contactPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
+        name,
+        address,
+        city_state_zip,
+        phone,
+        alt_phone,
+        fax,
+        hours
       }
     }
   }
