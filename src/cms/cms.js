@@ -1,6 +1,5 @@
 import CMS from 'netlify-cms'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ContactPagePreview from './preview-templates/ContactPagePreview'
 import React from 'react';
 import {Helmet} from "react-helmet";
 import { Route } from 'react-router-dom'

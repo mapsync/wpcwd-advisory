@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-export const ContactPageTemplate = ({ address }) => {
+export const ContactPageTemplate = ({ name, address, city_state_zip, phone, alt_phone, hours }) => {
   console.log(address);
   return (
     <section className="section">
@@ -15,8 +15,8 @@ export const ContactPageTemplate = ({ address }) => {
                 Address
               </p>
               <div className="panel-block">
-                {name}
-                {address}
+                {name}<br />
+                {address}<br />
                 {city_state_zip}
               </div>
             </div>
@@ -27,7 +27,8 @@ export const ContactPageTemplate = ({ address }) => {
                 Phone
               </p>
               <div className="panel-block">
-                {address}
+                {phone}<br />
+                {alt_phone}
               </div>
             </div>
           </div>
@@ -37,7 +38,7 @@ export const ContactPageTemplate = ({ address }) => {
                 Hours
               </p>
               <div className="panel-block">
-                {address}
+                {hours}
               </div>
             </div>
           </div>
@@ -62,6 +63,9 @@ const ContactPage = ({ data }) => {
         name={frontmatter.name} 
         address={frontmatter.address}
         city_state_zip={frontmatter.city_state_zip}
+        phone={frontmatter.phone}
+        alt_phone={frontmatter.alt_phone}
+        hours={frontmatter.hours}
       />
     </Layout>
   )
@@ -83,7 +87,6 @@ export const contactPageQuery = graphql`
         city_state_zip,
         phone,
         alt_phone,
-        fax,
         hours
       }
     }
