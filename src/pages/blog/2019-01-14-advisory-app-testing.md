@@ -7,4 +7,4 @@ description: This is only a test . . . again
 ---
 This is a test of the WMU Advisory App powered by GeoSyncGO . . .
 
-[See Area on Map](https://wmu.geosync.cloud/map?layer=Advisory&feature=1)
+[See Area on Map](https://hungry-kare-b0ece7.netlify.com/map?layer=Advisory&feature=1)
