@@ -6,4 +6,4 @@ description: ''
 ---
 Boil water advisory is in effect until further notice.
 
-[View area on map](https://wmu.geosync.cloud/map/?layer=Advisory&feature=0)
+[View area on map](https://hungry-kare-b0ece7.netlify.com/map?layer=Advisory&feature=0)
