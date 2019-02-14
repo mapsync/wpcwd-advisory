@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Boil Water Advisory Test
 date: 2019-02-14T15:32:03.437Z
-draft: true
+draft: false
 description: Advisory for Broadway and Jackson
 ---
 **_Do not_** consume water without boiling for 3 minutes......
