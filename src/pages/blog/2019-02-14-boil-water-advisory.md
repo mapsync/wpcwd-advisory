@@ -13,4 +13,4 @@ A boil water advisory has been issued. Do
 
 WMU will advise when it is......
 
-**SEE MAP**
+****[**SEE MAP**](/map/?layer=Advisory&feature=3)****
