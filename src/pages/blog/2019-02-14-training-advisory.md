@@ -10,4 +10,4 @@ This advisory is for training purposed only. It is not for an emergency.
 * blah
 * blah
 
-[See Map](https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad?layer=Advisory&feature=1)
+[See Map](/maps/9c6053d0-4304-49e1-a64b-0466c7018bad?layer=Advisory&feature=1)
