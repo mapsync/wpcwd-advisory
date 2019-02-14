@@ -9,6 +9,8 @@ A boil water advisory has been issued. Do
 
  from the system unless it has been boiled for 3 minutes.
 
-WMU will advise when it is......
+WMU will advise when it is.....
 
-****[**SEE MAP**](/map/?layer=Advisory&feature=3)****
+
+
+[SEE MAP](/map/?layer=Advisory&feature=3)
