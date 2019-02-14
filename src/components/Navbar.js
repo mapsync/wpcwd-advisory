@@ -57,7 +57,7 @@ const Navbar = class extends React.Component {
         <a className="navbar-item" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
           Bill Pay&nbsp;<ExternalLink size={16}/>
         </a>
-        <a className="navbar-item" rel="noopener noreferrer" href="/admin" target="_blank">
+        <a className="navbar-item" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
           Admin&nbsp;<ExternalLink size={16}/>
         </a>
       </div>
