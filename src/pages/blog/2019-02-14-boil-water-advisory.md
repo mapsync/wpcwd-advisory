@@ -7,8 +7,6 @@ description: Arlington St to Finley St
 ---
 A boil water advisory has been issued. Do 
 
-![](/img/android-chrome-192x192.png)
-
  from the system unless it has been boiled for 3 minutes.
 
 WMU will advise when it is......
