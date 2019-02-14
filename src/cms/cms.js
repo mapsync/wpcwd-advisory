@@ -37,6 +37,11 @@ var NotificationControl = class Control extends React.Component {
       message: "Sending...",
       disabled: true
     });
+    var link = document.getElementById("link-field-" + (id - 1)).value;
+    if (link.startsWith("https://wmu.geosync.cloud")) {
+      var url = new URL(link);
+      link = "https://hungry-kare-b0ece7.netlify.com" + url.pathname + url.search
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -47,7 +52,7 @@ var NotificationControl = class Control extends React.Component {
         "priority": document.getElementById("priority-field-" + (id - 4)).getAttribute("aria-checked"),
         "sound": document.getElementById("sound-field-" + (id - 3)).getAttribute("aria-checked"),
         "message": document.getElementById("message-field-" + (id - 2)).value,
-        "link": document.getElementById("link-field-" + (id - 1)).value
+        "link": link
       })
     })
       .then(function () {
