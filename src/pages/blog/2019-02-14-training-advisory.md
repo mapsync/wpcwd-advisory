@@ -10,4 +10,4 @@ This advisory is for training purposed only. It is not for an emergency.
 * blah
 * blah
 
-[See Map](https://wmu.geosync.cloud/map/?layer=Advisory&feature=2)
+# _****_[_**See Map**_](/map/?layer=Advisory&feature=2)_****_
