@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Road Open (test)
 date: 2019-02-15T19:32:37.587Z
-draft: true
+draft: false
 description: |-
   ***THIS IS JUST A TEST*** 
   (Hopefully the last one....for today)
