@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Temporary Road Closure (test)
 date: 2019-02-15T17:38:14.403Z
-draft: true
+draft: false
 description: '***THIS IS JUST A TEST***'
 ---
 Please be advised W. Broadway Street will be closed temporarily between Maple Street and Burns Avenue for approximately 4 hours due to utility repairs.  
