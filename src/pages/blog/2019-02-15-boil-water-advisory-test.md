@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Boil Water Advisory (test)
 date: 2019-02-15T12:09:32.942Z
-draft: true
+draft: false
 description: '***THIS IS JUST A TEST***'
 ---
 A **BOIL WATER ADVISORY** is in effect for WMU water customers located in the following area(s):
