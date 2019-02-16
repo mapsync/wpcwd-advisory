@@ -4,6 +4,13 @@ module.exports = {
     description: 'Advisory site for Winchester Municipal Utilities',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+      // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-134546071-1",
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

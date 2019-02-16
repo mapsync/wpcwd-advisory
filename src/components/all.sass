@@ -1,19 +1,7 @@
-@import "~bulma/sass/utilities/initial-variables"
-
-// Config vars
-// Kalidi logo brand color: #FD461E
-$kaldi-red: #0904dd
-$kaldi-red-invert: #fff
-
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-
-#navMenu a:hover
-  color: $kaldi-red
-
-#navMenu a.active
-  color: $kaldi-red
+$primary-color: #0904dd;
+$primary-color-dark: #0904dd;
+$secondary-color: rgba(9, 4, 221, 0.1);
+$link-color-dark: darken($primary-color, 10%) !default
 
 iframe
   border: 0
@@ -24,9 +12,6 @@ iframe
   bottom: 0
   width: 100%
   height: calc(100% - 52px)
-  
-.navbar .navbar-menu
-  box-shadow:none !important
 
 .content .taglist
   list-style: none
@@ -60,13 +45,75 @@ iframe
 .margin-top-0
   margin-top: 0 !important
 
-.blog-desc
-  margin-top: 8px
-
-@import "~bulma"
+@import "node_modules/spectre.css/src/spectre"
 
 .panel-heading
   font-size: 1em
 
 .section
   padding: 1.5rem 1.5rem
+
+.tab-menu-container
+  height: 2.8rem
+
+.tab-menu
+  position: fixed
+  top: 0
+  z-index: 999
+  width: 100%
+  height: 2.8rem
+  background-color: white
+  .btn
+    color: #777
+    border-radius: 0
+    height: 2.8rem
+    line-height: 0.7rem
+    border-width: 0
+    font-size: 0.6rem
+    img
+      height: 44px
+  .active
+    color: $primary-color
+    background-color: white
+
+.navbar .btn
+  height: 44px
+  width: 4.6rem
+  padding: 0.5rem 0.5rem
+  color: #777
+  .active
+    color: $primary-color
+
+.navbar-brand 
+  height: 44px
+  margin: 4px
+  img
+    height: 44px
+
+.card .card-header
+  background-color: #efefef
+  padding: 0.5rem
+
+body 
+  position: relative
+  margin: 0
+  padding-bottom: 6rem
+  height: 100%
+  min-height: 100%
+
+.footer
+  position: absolute
+  right: 0
+  bottom: 0
+  left: 0
+  padding: 0.5rem
+  background-color: #efefef
+
+.primary
+  margin: 0 auto
+
+.v-middle
+  vertical-align: middle
+
+.card
+  margin-bottom: 1rem

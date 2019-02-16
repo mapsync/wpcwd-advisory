@@ -1,69 +1,61 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { ExternalLink } from 'react-feather';
+import * as Icon from 'react-feather';
 
 const Navbar = class extends React.Component {
 
-  componentDidMount() {
-    // Get all "navbar-burger" elements
-   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    // Check if there are any navbar burgers
-   if ($navbarBurgers.length > 0) {
- 
-     // Add a click event on each of them
-     $navbarBurgers.forEach( el => {
-       el.addEventListener('click', () => {
- 
-         // Get the target from the "data-target" attribute
-         const target = el.dataset.target;
-         const $target = document.getElementById(target);
- 
-         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-         el.classList.toggle('is-active');
-         $target.classList.toggle('is-active');
- 
-       });
-     });
-   }
- }
- 
  render() {
    return (
-  
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src="/img/logo.png" alt="Wood Creek Water District" />
-        </Link>
-        {/* Hamburger menu */}
-        <div className="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+     <div>
+       <div className="tab-menu-container show-xs">
+        <div className="tab-menu btn-group btn-group-block">
+          <Link className="btn" activeClassName="active" to="/">
+            <Icon.AlertTriangle size={26}/>
+            <div>Alerts</div>
+          </Link>
+          <Link className="btn" activeClassName="active" to="/map">
+            <Icon.Map size={26}/>
+            <div>Map</div>
+          </Link>
+          <Link to="/" className="btn btn-link" title="Logo">
+            <img src="/img/logo.png" alt="" />
+          </Link>
+          <Link className="btn" activeClassName="active" to="/contact">
+            <Icon.Phone size={26}/>
+            <div>Contact</div>
+          </Link>
+          <a className="btn" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
+            <Icon.DollarSign size={26}/>
+            <div>Bill Pay</div>
+          </a>
         </div>
       </div>
-      <div id="navMenu" className="navbar-menu">
-      <div className="navbar-start has-text-centered">
-        <Link className="navbar-item" activeClassName="active" to="/">
-          Alerts
-        </Link>
-        <Link className="navbar-item" activeClassName="active" to="/map">
-          Map
-        </Link>
-        <Link className="navbar-item" activeClassName="active" to="/contact">
-          Contact
-        </Link>
-        <a className="navbar-item" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
-          Bill Pay&nbsp;<ExternalLink size={16}/>
-        </a>
-        <a className="navbar-item" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
-          Admin&nbsp;<ExternalLink size={16}/>
-        </a>
-      </div>
+      <div className="container grid-xs hide-xs">
+        <header className="navbar">
+          <section className="navbar-section text-right">
+            <Link className="btn btn-link" activeClassName="active" to="/">
+              Alerts
+            </Link>
+            <Link className="btn btn-link" activeClassName="active" to="/map">
+              Map
+            </Link>
+          </section>
+          <section className="navbar-center">
+            <Link to="/" className="navbar-brand mr-2" title="Logo">
+              <img src="/img/logo.png" alt="" />
+            </Link>
+          </section>
+          <section className="navbar-section">
+            <Link className="btn btn-link" activeClassName="active" to="/contact">
+              Contact
+            </Link>
+            <a className="btn btn-link" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
+              Bill Pay&nbsp;<Icon.ExternalLink size={16}/>
+            </a>
+          </section>
+        </header>
       </div>
     </div>
-  </nav>
   )}
 }
 

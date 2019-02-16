@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import * as Icon from 'react-feather';
 
 export const BlogPostTemplate = ({
   content,
@@ -12,36 +13,49 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
+    <div>
+      <div className="container grid-md">
+        {helmet || ''}
+        <div className="card">
+          <div className="card-header">
+            <div className="d-inline-block card-title h5">{title}</div>
+            <span> &nbsp;&bull;&nbsp; </span>
+            <div className="d-inline-block card-subtitle">{date}</div>
+          </div>
+          <div className="card-body">
             <PostContent content={content} />
+          </div>
+          <div className="card-footer">
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
           </div>
         </div>
       </div>
-    </section>
+      <div className="footer">
+        <div className="d-inline-block mt-1">© 2019 Winchester Municipal Utilities</div>
+        <div className="d-inline-block float-right mt-1">
+          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
+            <Icon.Settings size={16}/>
+          </a>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -50,6 +64,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  date: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -72,6 +87,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   )

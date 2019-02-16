@@ -2,49 +2,49 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import * as Icon from 'react-feather';
 
 export const ContactPageTemplate = ({ name, address, city_state_zip, phone, alt_phone, hours }) => {
-  console.log(address);
   return (
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <div className="panel">
-              <p className="panel-heading">
-                Address
-              </p>
-              <div className="panel-block">
-                {name}<br />
-                {address}<br />
-                {city_state_zip}
-              </div>
-            </div>
+    <div>
+      <div className="container grid-md">
+        <div className="card">
+          <div className="card-header">
+            Address
           </div>
-          <div className="column">
-            <div className="panel">
-              <p className="panel-heading">
-                Phone
-              </p>
-              <div className="panel-block">
-                {phone}<br />
-                {alt_phone}
-              </div>
-            </div>
+          <div className="card-body">
+            {name}<br />
+            {address}<br />
+            {city_state_zip}
           </div>
-          <div className="column">
-            <div className="panel">
-              <p className="panel-heading">
-                Hours
-              </p>
-              <div className="panel-block">
-                {hours}
-              </div>
-            </div>
+        </div>
+        <div className="card">
+          <div className="card-header">
+            Phone
+          </div>
+          <div className="card-body">
+            <a href={ "tel:+" + phone.replace(/[^0-9.]/g, "") }>{phone}</a><br />
+            {alt_phone}
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-header">
+            Hours
+          </div>
+          <div className="card-body">
+            {hours}
           </div>
         </div>
       </div>
-    </section>
+      <div className="footer">
+        <div className="d-inline-block mt-1">© 2019 Winchester Municipal Utilities</div>
+        <div className="d-inline-block float-right mt-1">
+          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
+            <Icon.Settings size={16}/>
+          </a>
+        </div>
+      </div>
+    </div>
   )
 }
 

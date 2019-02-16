@@ -7,6 +7,7 @@
     "bulma": "^0.7.0",
     "gatsby": "^2.0.66",
     "gatsby-image": "^2.0.23",
+    "gatsby-plugin-google-analytics": "^2.0.14",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^3.0.9",
     "gatsby-plugin-purgecss": "^2.4.0",
@@ -30,6 +31,7 @@
     "react-feather": "^1.1.6",
     "react-helmet": "^5.2.0",
     "react-router": "^4.3.1",
+    "spectre.css": "^0.5.8",
     "uuid": "^3.2.1"
   },
   "keywords": [
