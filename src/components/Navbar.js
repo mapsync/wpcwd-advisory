@@ -18,7 +18,7 @@ const Navbar = class extends React.Component {
             <div>Map</div>
           </Link>
           <Link to="/" className="btn btn-link" title="Logo">
-            <img src="/img/logo.png" alt="" />
+            <img src="/img/small-logo.png" alt="" />
           </Link>
           <Link className="btn" activeClassName="active" to="/contact">
             <Icon.Phone size={26}/>
@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
           </section>
           <section className="navbar-center">
             <Link to="/" className="navbar-brand mr-2" title="Logo">
-              <img src="/img/logo.png" alt="" />
+              <img src="/img/small-logo.png" alt="" />
             </Link>
           </section>
           <section className="navbar-section">
