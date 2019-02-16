@@ -23,7 +23,7 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, alt_
             Phone
           </div>
           <div className="card-body">
-            <a href={ "tel:+" + phone.replace(/[^0-9.]/g, "") }>{phone}</a><br />
+            {phone}<br />
             {alt_phone}
           </div>
         </div>
