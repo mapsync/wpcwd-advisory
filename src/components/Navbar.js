@@ -9,22 +9,22 @@ const Navbar = class extends React.Component {
      <div>
        <div className="tab-menu-container show-xs">
         <div className="tab-menu btn-group btn-group-block">
-          <Link className="btn" activeClassName="active" to="/">
+          <Link className="btn pt-2" activeClassName="active" to="/">
             <Icon.AlertTriangle size={26}/>
             <div>Alerts</div>
           </Link>
-          <Link className="btn" activeClassName="active" to="/map">
+          <Link className="btn pt-2" activeClassName="active" to="/map">
             <Icon.Map size={26}/>
             <div>Map</div>
           </Link>
           <Link to="/" className="btn btn-link" title="Logo">
             <img src="/img/small-logo.png" alt="" />
           </Link>
-          <Link className="btn" activeClassName="active" to="/contact">
+          <Link className="btn pt-2" activeClassName="active" to="/contact">
             <Icon.Phone size={26}/>
             <div>Contact</div>
           </Link>
-          <a className="btn" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
+          <a className="btn pt-2" rel="noopener noreferrer" href="https://smartbillcorp.com/oa/frmLogin.aspx?ws=winchesterky" target="_blank">
             <Icon.DollarSign size={26}/>
             <div>Bill Pay</div>
           </a>
