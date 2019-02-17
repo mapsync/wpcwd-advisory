@@ -5,9 +5,14 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        id: "UA-134546071-1",
+        // your google analytics tracking id
+        trackingId: `UA-134546071-1`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
       },
     },
     'gatsby-plugin-react-helmet',
