@@ -9,4 +9,4 @@ Please be advised West Lexington Avenue will be reduced to one-lane traffic from
 
 We appreciate your cooperation and apologize for any inconvenience this work may cause.  
 
-[See Map](https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad?layer=Advisory&feature=3)
+****[**SEE MAP**](https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad?layer=Advisory&feature=3)****
