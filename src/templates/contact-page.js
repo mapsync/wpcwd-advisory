@@ -7,7 +7,7 @@ import * as Icon from 'react-feather';
 export const ContactPageTemplate = ({ name, address, city_state_zip, phone, alt_phone, hours }) => {
   return (
     <div>
-      <div className="container grid-md">
+      <div className="container container-main grid-md">
         <div className="card">
           <div className="card-header">
             Address

@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
 
   return (
     <div>
-      <div className="container grid-md">
+      <div className="container container-main grid-md">
         {helmet || ''}
         <div className="card">
           <div className="card-header">

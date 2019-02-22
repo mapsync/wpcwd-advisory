@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <div className="primary container grid-md">
+        <div className="container container-main grid-md">
           {posts
             .map(({ node: post }) => (
               <div className="card" key={post.id}>
