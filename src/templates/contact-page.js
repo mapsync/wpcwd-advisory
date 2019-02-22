@@ -37,8 +37,7 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, alt_
         </div>
       </div>
       <div className="footer">
-        <div className="d-inline-block mt-1">© 2019 Winchester Municipal Utilities</div>
-        <div className="d-inline-block float-right mt-1">
+        <div className="d-inline-block float-right">
           <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
             <Icon.Settings size={16}/>
           </a>
