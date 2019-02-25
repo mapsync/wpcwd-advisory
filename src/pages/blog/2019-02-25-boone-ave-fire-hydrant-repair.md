@@ -13,7 +13,7 @@ Please be advised on Tuesday, February 26, 2019, WMU Crews will be making repair
 
 103 & 111 Short Street
 
-SEE MAP
+[SEE MAP](https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad?layer=Advisory&feature=2)
 
 Once water service is restored, a Boil Water Advisory will be issued in the affected area.  All affected customers will be notified of the Boil Water Advisory by way of door tags and the WMU Advisory App.
 
