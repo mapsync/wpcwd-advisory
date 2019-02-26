@@ -70,6 +70,11 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
+  var re = new RegExp("https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad", "g");
+  post.html = post.html.replace(re, "/map");
+  re = new RegExp("https://wmu.geosync.cloud/map", "g");
+  post.html = post.html.replace(re, "/map");
+
   return (
     <Layout>
       <BlogPostTemplate

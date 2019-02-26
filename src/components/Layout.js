@@ -31,15 +31,17 @@ const TemplateWrapper = ({ children }) => (
           <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-          <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0904dd" />
+          <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#c03d20" />
           <link rel="manifest" href="/img/site.webmanifest" />
-          <meta name="apple-mobile-web-app-title" content="{data.site.siteMetadata.title}" />
-          <meta name="application-name" content="{data.site.siteMetadata.title}" />
+          <meta name="apple-mobile-web-app-title" content={data.site.siteMetadata.title} />
+          <meta name="application-name" content={data.site.siteMetadata.title} />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
           <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
+          <meta property="og:image:width" content="279" />
+          <meta property="og:image:height" content="279" />
+          <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>

@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'WMU Advisory',
-    description: 'Advisory site for Winchester Municipal Utilities',
+    title: 'CDP Advisory',
+    description: 'Advisory site for CDP Development',
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
       // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-134546071-1",
+        trackingId: "UA-134546071-2",
       },
     },
     'gatsby-plugin-react-helmet',
