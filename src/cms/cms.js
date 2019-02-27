@@ -38,9 +38,9 @@ var NotificationControl = class Control extends React.Component {
       disabled: true
     });
     var link = document.getElementById("link-field-" + (id - 1)).value;
-    if (link.startsWith("https://wmu.geosync.cloud")) {
+    if (link.startsWith("https://cdp.geosync.cloud")) {
       var url = new URL(link);
-      link = "https://hungry-kare-b0ece7.netlify.com" + url.pathname + url.search
+      link = "https://quirky-wilson-29fad5.netlify.com" + url.pathname + url.search
     }
     fetch("/", {
       method: "POST",

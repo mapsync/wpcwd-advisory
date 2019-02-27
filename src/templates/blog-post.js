@@ -49,7 +49,7 @@ export const BlogPostTemplate = ({
       </div>
       <div className="footer">
         <div className="d-inline-block float-right">
-          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://wmu.geosync.cloud/admin" target="_blank">
+          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://cdp.geosync.cloud/admin" target="_blank">
             <Icon.Settings size={16}/>
           </a>
         </div>
@@ -70,9 +70,9 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
-  var re = new RegExp("https://geosync.cloud/maps/9c6053d0-4304-49e1-a64b-0466c7018bad", "g");
+  var re = new RegExp("https://geosync.cloud/maps/d3bdd463-6d50-478d-88ad-d7d5114ab1ef", "g");
   post.html = post.html.replace(re, "/map");
-  re = new RegExp("https://wmu.geosync.cloud/map", "g");
+  re = new RegExp("https://cdp.geosync.cloud/map", "g");
   post.html = post.html.replace(re, "/map");
 
   return (
