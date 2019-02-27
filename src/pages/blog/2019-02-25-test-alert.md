@@ -7,4 +7,4 @@ description: Test Alert
 ---
 This is a test alert.
 
-[View on map](/maps/d3bdd463-6d50-478d-88ad-d7d5114ab1ef?layer=Advisory&feature=1)
+[View on map](/map?layer=Advisory&feature=1)
