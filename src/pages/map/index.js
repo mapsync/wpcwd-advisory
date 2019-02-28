@@ -9,7 +9,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-      <iframe id="map" title="map" src="about:blank"></iframe>
+      <iframe id="map" title="map" src="about:blank" allow="geolocation"></iframe>
       </Layout>
     )
   }
