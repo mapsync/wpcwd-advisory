@@ -7,7 +7,7 @@ description: for Henry Co Water District
 ---
 This is an advisory to demonstrate the GeoSync Branded Notification App for the Henry Co Water District.
 
-This advisory is for demonstration purposes only and should _**NOT**_ be considered an actual emergency.
+This advisory is for demonstration purposes only and should **_NOT_** be considered an actual emergency.
 
 If this were a real emergency you would be instructed....
 
@@ -15,4 +15,4 @@ If this were a real emergency you would be instructed....
 2. Blah
 3. Blah
 
-See Map of Area
+[See Map of Area](/map/?layer=Advisory&feature=3)
