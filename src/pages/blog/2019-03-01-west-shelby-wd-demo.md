@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: West Shelby WD Demo
 date: 2019-03-01T05:00:00.000Z
-draft: true
+draft: false
 description: GeoSync Branded Notification App demonstration
 ---
 This is an advisory to demonstrate the GeoSync Branded Notification App for the West Shelby Water District.
