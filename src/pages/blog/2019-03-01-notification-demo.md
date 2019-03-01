@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Henry Co WD Demo
 date: 2019-03-01T10:04:07.480Z
 draft: true
-description: Demonstration for Henry Co Water District
+description: GeoSync Branded Notification App demonstration for Henry Co Water District
 ---
 This is an advisory to demonstrate the GeoSync Branded Notification App for the Henry Co Water District.
 
