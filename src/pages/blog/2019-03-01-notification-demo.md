@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: West Shelby WD Demo
+title: Henry Co WD Demo
 date: 2019-03-01T10:04:07.480Z
 draft: true
 description: Demonstration for Henry Co Water District
