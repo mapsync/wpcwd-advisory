@@ -49,7 +49,7 @@ const Navbar = class extends React.Component {
             <Link className="btn btn-link" activeClassName="active" to="/contact">
               Contact
             </Link>
-            <a className="btn btn-link" rel="noopener noreferrer" href="http://www.cdpengineers.com" target="_blank">
+            <a className="btn btn-link" rel="noopener noreferrer" href="https://portal.utilitydistrict.com/5670" target="_blank">
               Bill Pay&nbsp;<Icon.ExternalLink size={16}/>
             </a>
           </section>
