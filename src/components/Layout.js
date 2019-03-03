@@ -31,7 +31,6 @@ const TemplateWrapper = ({ children }) => (
           <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-          <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#c03d20" />
           <link rel="manifest" href="/img/site.webmanifest" />
           <meta name="apple-mobile-web-app-title" content={data.site.siteMetadata.title} />
           <meta name="application-name" content={data.site.siteMetadata.title} />

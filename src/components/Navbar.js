@@ -24,7 +24,7 @@ const Navbar = class extends React.Component {
             <Icon.Phone size={26}/>
             <div>Contact</div>
           </Link>
-          <a className="btn pt-2" rel="noopener noreferrer" href="http://www.cdpengineers.com" target="_blank">
+          <a className="btn pt-2" rel="noopener noreferrer" href="https://portal.utilitydistrict.com/5670" target="_blank">
             <Icon.DollarSign size={26}/>
             <div>Bill Pay</div>
           </a>
