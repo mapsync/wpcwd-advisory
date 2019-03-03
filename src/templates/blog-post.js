@@ -70,9 +70,9 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
-  var re = new RegExp("https://geosync.cloud/maps/d3bdd463-6d50-478d-88ad-d7d5114ab1ef", "g");
+  var re = new RegExp("https://geosync.cloud/maps/e2080ba6-7192-4d74-afdb-390d7b1db825", "g");
   post.html = post.html.replace(re, "/map");
-  re = new RegExp("https://cdp.geosync.cloud/map", "g");
+  re = new RegExp("https://woodcreek.geosync.cloud/map", "g");
   post.html = post.html.replace(re, "/map");
 
   return (
