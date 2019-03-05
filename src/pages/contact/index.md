@@ -1,10 +1,10 @@
 ---
 templateKey: contact-page
 title: Contact
-name: Wood Creek Water District
-address: 1670 E Hal Rogers Parkway
-city_state_zip: London, KY 40741
-phone: (606) 878-9420
-fax: (606) 878-9425
+name: Western Pulaski Water District
+address: 2128 W. Hwy 80 
+city_state_zip: Somerset, KY 42503
+phone: (606) 679-1569 
+fax: (606) 677-9449
 hours: 8:00AM - 4:30PM (Monday - Friday)
 ---
