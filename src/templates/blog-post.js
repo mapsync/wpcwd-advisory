@@ -18,6 +18,11 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+  var re = new RegExp("https://geosync.cloud/maps/b2d92f34-db6f-4073-98f6-646d68d27aa1", "g");
+  post.html = post.html.replace(re, "/map");
+  re = new RegExp("https://wpcwd.geosync.cloud/map", "g");
+  post.html = post.html.replace(re, "/map");
+
   return (
     <div>
       <div className="container container-main grid-md">
