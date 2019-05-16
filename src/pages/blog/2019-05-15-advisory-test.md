@@ -8,4 +8,4 @@ This is only a Test
 
 ![](/img/mstile-150x150.png)
 
-See Map
+[See Map](/map?layer=Advisory&feature=0)
